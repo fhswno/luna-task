@@ -8,7 +8,7 @@ import { Route } from "react-router-dom";
 
 // COMPONENTS
 import { DataTable } from "./components/table/DataTable";
-import { DataCharts } from "./components/DataCharts";
+import { DataCharts } from "./components/chart/DataCharts";
 
 function App() {
   return (
