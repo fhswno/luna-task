@@ -1,0 +1,96 @@
+#pagination {
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  padding: 30px;
+}
+
+main > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#pagination select {
+  width: fit-content;
+  align-self: center;
+  margin: 12px 0;
+}
+
+#pagination-buttons {
+  align-self: center;
+}
+
+#pagination-buttons button {
+  margin: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  color: #444;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #fafafa;
+}
+
+th {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 20px 30px;
+  color: #888;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+td {
+  padding: 20px 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.search-bar {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  outline: none;
+}
