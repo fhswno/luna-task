@@ -1,0 +1,46 @@
+body {
+  background-color: #f6f6f6;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.home a {
+  color: #0088fe;
+  text-decoration: none;
+}
+
+.home a:hover {
+  color: #00c49f;
+  text-decoration: underline;
+}
+
+.home h1 {
+  color: #333;
+}
+
+.home p {
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.home p:last-child {
+  margin-bottom: 0;
+}
+
+.home code {
+  background-color: #eee;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+}
