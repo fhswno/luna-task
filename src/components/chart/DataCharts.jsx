@@ -1,4 +1,7 @@
+// REACT
 import React, { useState } from "react";
+
+// RECHARTS
 import {
   BarChart,
   Bar,
@@ -11,35 +14,28 @@ import {
   LineChart,
   Line,
 } from "recharts";
+
+// HELPER FUNCTIONS
+import { getSalaryRange, getExperienceRange } from "../../lib/helper";
+
+// MOMENT - DATE HANDLING
 import moment from "moment";
+
+// LODASH - DATA HANDLING
 import _ from "lodash";
+
+// MOCK DATA
 import mock_data from "../../MOCK_DATA.json";
+
+// CSS
 import "./DataCharts.css";
 
+// CONSTANTS
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 export const DataCharts = () => {
   const [chartType, setChartType] = useState("BarChart");
   const [dataProperty, setDataProperty] = useState("date_of_birth");
-
-  const getSalaryRange = (salary) => {
-    if (salary === null) {
-      return null;
-    }
-
-    const base = Math.floor(salary / 10000);
-    return `${base * 10}k - ${base * 10 + 10}k`;
-  };
-
-  const getExperienceRange = (experience) => {
-    if (experience === null) {
-      return null;
-    }
-
-    // ranges of one year
-    const base = Math.floor(experience);
-    return `${base} - ${base + 1}y`;
-  };
 
   const transformedData = mock_data
     .filter(
