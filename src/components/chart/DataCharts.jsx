@@ -42,7 +42,7 @@ export const DataCharts = () => {
       (item) =>
         item.salary !== null &&
         item.years_of_experience !== null &&
-        !isNaN(moment(item.date_of_birth).year())
+        !isNaN(moment(item.date_of_birth).year()),
     )
     .map((item) => ({
       ...item,
@@ -59,7 +59,7 @@ export const DataCharts = () => {
       ? "birthYear"
       : dataProperty === "years_of_experience"
       ? "experienceRange"
-      : dataProperty
+      : dataProperty,
   );
 
   const chartData = Object.keys(dataGroupedByProperty).map((key) => ({
