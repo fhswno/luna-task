@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// CSS
+import "./App.css";
+
+// ROUTING
+import { BrowserRouter } from "react-router-dom";
+import { Routes } from "react-router-dom";
+import { Route } from "react-router-dom";
+
+// COMPONENTS
+import { DataTable } from "./components/DataTable";
+import { DataCharts } from "./components/DataCharts";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename="/">
+      <Routes>
+        <Route path="table" element={<DataTable />} />
+        <Route path="charts" element={<DataCharts />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
