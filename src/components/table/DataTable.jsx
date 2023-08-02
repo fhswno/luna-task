@@ -1,5 +1,5 @@
 // JSON DATA
-import data from "../MOCK_DATA.json";
+import data from "../../MOCK_DATA.json";
 
 // REACT
 import React, { useMemo } from "react";
