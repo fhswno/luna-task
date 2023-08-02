@@ -28,7 +28,7 @@ export const DataTable = () => {
     },
     useGlobalFilter, // filters rows down
     useSortBy, // sorts the filtered rows
-    usePagination // paginates the sorted and filtered rows
+    usePagination, // paginates the sorted and filtered rows
   );
 
   const {
