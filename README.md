@@ -28,6 +28,8 @@ It has been built with simplicity and functionality in mind. My goal was to buil
 
 I used the ✨ classic ✨ `react-router-dom` to handle routing, `react-table` as it is a convenient, popular dependency to build tables, `rechart` for its simplicity and flexibility and `lodash` & `moment` to easily handle dates and data types. I could have considered `chart.js` to build the chart, but preferred to use `rechart` for its ease-of-setup and to make sure I can complete the task in less than three hours.
 
+I've set up GitHub Actions in order to catch errors before them making their way to production.
+
 ## ❌ Limitations
 
 Decisions had to be made in order to ship the task on time.
